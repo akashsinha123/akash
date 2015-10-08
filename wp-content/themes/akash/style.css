@@ -1,0 +1,512 @@
+/*
+*
+*Theme Name: akash Theme
+*Theme URI: http://www.mantralabsglobal.com
+*Author: Mantra Labs
+*Author URI: http://www.mantralabsglobal.com
+*Version: 1.0
+*
+*/
+
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-family: AvenirNextMedium;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: AvenirNextCondensedBoldItalic;
+}
+
+a, a:visited, a:hover, a:active {
+	text-decoration: none;
+}
+
+a.title {
+	color: #ff6138;
+}
+
+@font-face {
+    font-family: AvenirNextMedium;
+    src: url(fonts/AvenirNext-Medium.ttf);
+}
+@font-face {
+    font-family: AvenirNextCondensedBoldItalic;
+    src: url(fonts/AvenirNextCondensed-BoldItalic.ttf);
+}
+
+/*------------- Blog Header -------------*/
+
+.blog_Header {
+	background: url('img/BlogBg.png') center 0px no-repeat;
+	height: 600px;
+	padding-top: 6px;
+	position: relative;
+}
+
+.BlogHeader_Icon {
+	background-color: #fff;
+}
+
+#blogsNavbarSignup {
+	border: 1px solid #fff;
+	padding: 15px 34px 13px;
+	color: #fff;
+}
+
+#blogsNavbarSignup:hover {
+	opacity: .9;
+	color: grey;
+}
+
+.activityShell_HeaderJumbotron h1.BlogHeaderHeading {
+	width: 740px;
+}
+
+body.home .blog_Header {
+	background: url('img/blogListing.png') center 0px no-repeat;
+}
+
+/*------------------ Main Body --------------------*/
+
+/*----------------- Description ------------------*/
+
+.BlogsBody_Container {
+	max-width: 940px;
+	padding: 0;
+}
+
+.BlogsBody_Container p {
+	font-size: 24px;
+	font-family: AvenirNextMedium;
+	color: #444444;
+	line-height: 28px;
+}
+
+.BlogsBody_Container h4, .BlogsBody_Container h3 {
+	font-size: 36px;
+	font-family: AvenirNextCondensedBoldItalic;
+	color: #444444;
+}
+
+
+.BlogSummery_SummaryPara {
+	color: #444444;
+	margin-bottom: 36px;
+	margin-top: 36px;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.BlogSummery_SummaryPara span {
+	color: #ff6138;
+	font-size: 66px;
+	font-weight: bold;
+	font-style: italic;
+	float: left;
+	padding-top: 14px;
+	width: 52px;
+}
+
+.BlogImageSection {
+	height: 500px;
+	margin-bottom: 89px;
+}
+
+.BlogImageSection figcaption {
+	color: #777777;
+	font-size: 18px;
+}
+
+.BlogImageSection img {
+	margin-bottom: 34px;
+}
+
+p.BlogsPara_2 {
+	margin-bottom: 52px;
+}
+
+
+.extra-BlogDetailfooter {
+	background-color: #22b7f2;
+	width: 100%;
+}
+
+.extra-BlogDetailfooter .BlogQuotationContainer {
+	max-width: 660px;
+	margin: 0 auto;
+}
+
+.extra-BlogDetailfooter .BlogQuotationContainer p {
+	font-size: 36px;
+	font-family: AvenirNextCondensedBoldItalic;
+	padding: 54px 0px;
+	color: #fff;
+}
+
+.BlogsBody_Container h4.BlogsPara_3_Header {
+	font-size: 36px;
+	color: #444444;
+	margin: 46px 0 50px;
+}
+
+.BlogsPara_3 {
+	margin-bottom: 32px;
+}
+
+
+/*------------------ Subscribe ------------------*/
+
+.BlogSubscribePost {
+	max-width: 940px;
+}
+
+.BlogsSubscribeSection {
+	background-color: #f5e70e;
+	padding: 13px;
+	padding-bottom: 41px;
+	max-width: 940px;
+    margin-left: 0;
+    margin-bottom: 56px;
+}
+
+.BlogsSubscribeSection h4 {
+
+}
+
+.BlogsSubscribeSection p {
+	margin: 12px 0 36px;
+}
+
+.BlogsSubscribeSection input[type=text] {
+	height: 52px;
+	font-family: AvenirNextMedium;
+	color: #999999;
+	font-size: 18px;
+}
+
+.BlogsSubscribeSection button {
+	height: 52px;
+	background-color: #22b7f2;
+	color: #fff;
+	font-size: 24px;
+}
+
+/*------------------ Author Section -------------------*/
+
+.avatar {
+	float: left;
+	margin-top: 58px;
+}
+
+.BlogsAuthorSection {
+	display: inline-block;
+    float: right;
+    width: 790px;
+    margin-bottom: 36px;
+}
+
+.BlogsAuthorSection .BlogAuthorAbout {
+	font-size: 18px;
+	color: #999999;
+	margin-top: 12px;
+	margin-bottom: 16px;
+}
+
+.BlogsAuthorSection h3 {
+	color: #ff6138;
+	margin-bottom: 36px;
+}
+
+.BlogAuthorDescription {
+	color: #999999;
+}
+
+/*---------------- Footer -----------------*/
+
+#BlogFooter {
+	border-top: 1px solid #e4e4e4;
+	max-width: 940px;
+	height: 397px;
+}
+
+#BlogFooter h3.BlogRecomandedAct {
+	color: #444444;
+}
+
+#BlogFooter ul.BlogFooterRelated li {
+	float: left;
+	height: auto;
+	overflow: hidden;
+	margin-right: 10px;
+}
+
+#BlogFooter ul.BlogFooterRelated li:last-child {
+	margin-right: 0px;
+}
+
+.BlogFooterRelated {
+	list-style: none;
+	padding-left: 0;
+}
+
+.BlogFooterRelatedCaptions {
+	list-style: none;
+	padding-left: 0;
+}
+
+.BlogFooterRelatedCaptions li.BlogFooterImgDesc {
+	float: left;
+	width: 300px;
+	height: auto;
+	margin-right: 10px;
+}
+
+.BlogFooterRelatedCaptions li.BlogFooterImgDesc:last-child {
+	margin-right: 0px;
+}
+
+.BlogFooterImgDesc {
+	font-size: 24px;
+	font-family: AvenirNextCondensedBoldItalic;
+	color: #ff6138;
+}
+
+/*ul.BlogFooterRelated li {
+	height: auto;
+	overflow: hidden;
+}*/
+
+.BlogFooterRelated .rec-img_1 {
+	background: url('img/Layer_28.png');
+	position: relative;
+}
+
+.BlogFooterRelated .rec-img_2 {
+	background: url('img/Layer_29.png');
+	position: relative;
+}
+
+.BlogFooterRelated .rec-img_3 {
+	background: url('img/Layer_30.png');
+	position: relative;
+}
+
+
+.blogListing_Header {
+	background: url('img/blogListing.png') center 0px no-repeat;
+	height: 600px;
+	padding-top: 6px;
+	position: relative;
+}
+
+.BlogListingContainer {
+	max-width: 940px;
+	padding: 0;
+}
+
+.BlogListingImgTags {
+	background-color: #ffffff;
+    color: #888888;
+    font-size: 12px;
+    height: 30px;
+    width: 45%;
+}
+
+.BlogListingImgTags:first-child {
+	margin-right: 5%;
+}
+
+.BlogListingImg {
+	height: 200px;
+	width: 300px;
+}
+
+.BlogListingImgCols {
+	margin-bottom: 50px;
+}
+
+.BlogListingImgCols h4 {
+	color: #ff6138;
+	font-size: 24px;
+	margin: 36px 0 24px;
+}
+
+
+.BlogListingContainer h3.BlogsListingRecentPosts {
+	color: #444444;
+	font-size: 36px;
+	text-align: center;
+	margin: 40px 0 36px;
+}
+
+.BlogListingContainer .BlogListingLoadMore {
+	color: #22b7f2;
+	font-size: 24px;
+	font-family: AvenirNextCondensedBoldItalic;
+	margin-bottom: 50px;
+}
+
+.BlogListingContainer .BlogListingLoadMore:hover {
+	color: #000;
+}
+
+
+#blogListingHeaderSignup {
+	border: 1px solid #fff;
+	margin-left: 225px;
+	background-color: transparent;
+	background: none;
+	color: #ffffff;
+	font-size: 18px;
+	font-family: AvenirNextCondensedBoldItalic;
+	padding: 10px 46px 6px;
+}
+
+#blogListingHeaderSignup:hover {
+	opacity: .9;
+}
+
+.BlogListingHeaderContainer {
+	margin-bottom: 50px;
+}
+
+
+/*--------------- Footer ---------------*/
+
+.BlogListingFooter {
+	background-color: #22b7f2;
+	color: #ffffff;
+	height: 390px;
+	line-height: 390px;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.BlogListingFooter p {
+	font-size: 18px;
+	text-align: center;
+}
+
+
+.activityShell_Controller {
+	max-width: 980px;
+	padding: 0;
+}
+
+
+
+.activityShell_HeaderJumbotron {
+	background: none;
+	padding-bottom: 0;
+}
+
+.activityShell_HeaderJumbotron h1 {
+	margin-top: 127px;
+	margin-bottom: 0;
+	font-family: AvenirNextCondensedBold;
+    font-size: 54px;
+    color: #fff;
+    background-color: #000;
+    display: inline-block;
+    padding: 12px;
+    margin-left: 160px;
+    width: 690px;
+    -ms-transform: skew(-8deg);
+    -webkit-transform: skew(-8deg);
+    transform: skew(-8deg);
+    transform-origin: bottom left;
+}
+
+.activityShell_HeaderJumbotron h3 {
+	margin: 0;
+	font-family: AvenirNextCondensedMedium;
+	font-size: 24px;
+    color: #fff;
+    background-color: #000;
+    display: inline-block;
+    padding: 12px;
+    margin-left: 160px;
+    -ms-transform: skew(-8deg);
+    -webkit-transform: skew(-8deg);
+    transform: skew(-8deg);
+    transform-origin: bottom left;
+}
+
+.Activityfooter {
+	height: 500px;
+}
+
+.Activityfooter h3 {
+	color: #22b7f2;
+	font-family: AvenirNextCondensedBoldItalic;
+	font-size: 24px;
+	margin: 36px 0 24px;
+	max-width: 900px;
+	display: inline-block;
+}
+
+.Activityfooter .cross {
+	float: right;
+	margin-right: 30px;
+	margin-top: 37px;
+}
+
+.Activityfooter ul li {
+	float: left;
+	width: 320px;
+	height: 370px;
+	margin-right: 10px;
+}
+
+.Activityfooter ul li:last-child {
+	margin-right: 0px;
+}
+
+.imgactivityContainer {
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.activityContainer {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.extra-Activityfooter {
+	background-color: #22b7f2;
+	width: 100%;
+	height: 320px;
+	text-align: center;
+}
+
+.extra-Activityfooter .activityContainer p {
+	font-size: 18px;
+	font-family: AvenirNextRegular;
+	padding-top: 150px;
+	color: #fff;
+}
+
+
+#activityShell_HeaderJumbotron {
+	background-color: transparent;
+}
+
+
+#BlogHeaderHeading {
+	font-size: 54px;
+	color: #fff;
+	width: 690px;
+}
+
+#BlogHeaderHeading_2 {
+	font-size: 54px;
+	color: #fff;
+	width: 740px;	
+}
