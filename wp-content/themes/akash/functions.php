@@ -19,3 +19,11 @@ add_filter('next_posts_link_attributes', 'posts_link_attributes');
 function posts_link_attributes() {
     return 'class="btn btn-default btn-block BlogListingLoadMore"';
 }
+
+add_action('wp_enqueue_scripts', 'unknown_site_scripts');
+
+function unknown_site_scripts() {
+    wp_register_script('main_script', get_template_directory_uri() . '/js/main.js');
+    wp_enqueue_script('jquery');
+    wp_enqueue_script('main_script', get_template_directory_uri() . '/js/main.js');
+}

@@ -21,6 +21,10 @@
                     <?php endif;?>
                 </div>
             <?php endwhile; ?>
+                <?php 
+                    $max = $wp_query->max_num_pages;
+                    $paged = ( get_query_var('paged') > 1 ) ? get_query_var('paged') : 1; 
+                ?>
                 <div class="col-md-12"><div class="col-md-4 col-md-offset-4 clearfix"><?php next_posts_link( 'LOAD MORE' ); ?></div></div>
             <?php endif; ?>
         </div>
