@@ -14,7 +14,7 @@
                         $tags_num = count(wp_get_post_tags($post->ID));
                     ?>
                     <?php if($tags_num >= 1) : ?>
-                        <a href="<?= get_category_link($tags[0]->name) ?>" class="btn btn-default BlogListingImgTags pull-left"><?= $tags[0]->name; ?></a>
+                        <a href="<?= get_tag_link($tags[0]->term_id); ?>" class="btn btn-default BlogListingImgTags pull-left"><?= $tags[0]->name; ?></a>
                     <?php endif;?>
                     <?php if($tags_num >= 2) : ?>
                         <a href="" class="btn btn-default BlogListingImgTags pull-right">+<?= $tags_num - 1 ?> more</a>
