@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
 	if(pageNum <= max) {
 		// Insert the "More Posts" link.
 		$('#content')
-			.append('<div class="pbd-alp-placeholder-'+ pageNum +'"></div>')
+			.append('<div class="pbd-alp-placeholder-'+ pageNum +' clearfix"></div>')
 			.append('<p id="pbd-alp-load-posts" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center"><a class="col-md-4 btn btn-default BlogListingLoadMore" href="#">Load More</a></p>');
 			
 		// Remove the traditional navigation.

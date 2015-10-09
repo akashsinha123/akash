@@ -317,10 +317,6 @@ p.BlogsPara_2 {
     width: 45%;
 }
 
-.BlogListingImgTags:first-child {
-	margin-right: 5%;
-}
-
 .BlogListingImg {
 	height: 200px;
 	width: 300px;
@@ -509,4 +505,18 @@ p.BlogsPara_2 {
 	font-size: 54px;
 	color: #fff;
 	width: 740px;	
+}
+
+/*------------------------ MORE TAG -------------*/
+
+ul.more-tags {
+	clear: both;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	/*display: none;*/
+}
+
+.tags-open {
+	margin: 10px 0px;
 }

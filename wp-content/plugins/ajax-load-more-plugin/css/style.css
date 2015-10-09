@@ -1,3 +1,13 @@
 #pbd-alp-load-posts a {
 	float: none;
 }
+
+.pbd-alp-placeholder-* {
+	overflow: hidden;
+	clear: both;
+}
+
+.clearfix {
+	overflow: hidden;
+	clear: both;
+}
