@@ -30,5 +30,4 @@ function unknown_site_scripts() {
     wp_enqueue_script('jquery');
     wp_enqueue_script('main_script', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'));
     wp_enqueue_script('main_script', get_template_directory_uri() . '/js/main.js');
-    
 }

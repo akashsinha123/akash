@@ -3,7 +3,7 @@
 
 <div class="container BlogListingContainer">
     <h3 class="BlogsListingRecentPosts">Recent posts</h3>
-        <div class="row">
+        <div id="content" class="row" role="main">
             <?php if(have_posts()) : while(have_posts()) : the_post() ?>
                 <div class="col-md-4 BlogListingImgCols">
                     <?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
@@ -21,11 +21,6 @@
                     <?php endif;?>
                 </div>
             <?php endwhile; ?>
-                <?php 
-                    $max = $wp_query->max_num_pages;
-                    $paged = ( get_query_var('paged') > 1 ) ? get_query_var('paged') : 1; 
-                ?>
-                <div class="col-md-12"><div class="col-md-4 col-md-offset-4 clearfix"><?php next_posts_link( 'LOAD MORE' ); ?></div></div>
             <?php endif; ?>
         </div>
     </div>
