@@ -42,7 +42,6 @@ a.title {
 /*------------- Blog Header -------------*/
 
 .blog_Header {
-	background: url('img/BlogBg.png') center 0px no-repeat;
 	height: 600px;
 	padding-top: 6px;
 	position: relative;
@@ -69,6 +68,20 @@ a.title {
 
 body.home .blog_Header {
 	background: url('img/blogListing.png') center 0px no-repeat;
+}
+
+.single-post-header-image {
+	position: absolute;
+	height: 600px;
+	width: 100%;
+}
+
+body.single header.blog_Header {
+	padding-top: 0px;
+}
+
+body.single header.blog_Header .navbar {
+	padding-top: 6px;
 }
 
 /*------------------ Main Body --------------------*/

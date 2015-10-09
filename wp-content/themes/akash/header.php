@@ -8,6 +8,9 @@
 </head>
 <body <?php body_class(); ?>>
 <header class="blog_Header">
+    <?php if (is_singular()) : ?>
+        <img class="single-post-header-image" src="<?= wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>">
+    <?php endif; ?>
 <nav class="navbar" role="navigation">
     <div class="container activityShell_Controller">
         <div class="navbar-header">
