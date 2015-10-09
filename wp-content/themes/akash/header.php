@@ -38,8 +38,8 @@
 <?php elseif (is_singular()) : ?>
     <div class="jumbotron activityShell_HeaderJumbotron" id="activityShell_HeaderJumbotron">
         <div class="container">
-            <h1 class="BlogHeaderHeading" id="BlogHeaderHeading">TOP 25 BEST PLACES TO SNORKEL DIVE IN INDIA</h1>
-            <h3>by Ketan Mehta, on Oct 25, 2015</h3>
+            <h1 class="BlogHeaderHeading" id="BlogHeaderHeading"><?= $post->post_title; ?></h1>
+            <h3>by <?= get_the_author_meta( 'display_name', $post->post_author); ?>, on <?= mysql2date('M j, Y', $post->post_date); ?></h3>
         </div> <!-- end container -->
     </div> <!-- end jumbotron -->
 <?php endif; ?>

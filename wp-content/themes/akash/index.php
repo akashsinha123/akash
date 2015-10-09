@@ -23,14 +23,19 @@
                         <button class="btn btn-default BlogListingImgTags tags-open-link dropdown-toggle pull-right dropdown-toggle" data-toggle="collapse" data-target="#<?= $post->post_name; ?>">+<?= $tags_num - 1 ?> more</button>
                         <!-- <a href="javascript:void()" class="btn btn-default BlogListingImgTags tags-open-link dropdown-toggle pull-right">+ more</a> -->
                         <ul id="<?= $post->post_name; ?>" class="collapse more-tags clearfix">
-                            <?php $tag_num = 1; foreach( $tags as $tag) : ?>
-                                <li><a class="btn btn-default BlogListingImgTags tags-open <?php if($tag_num % 2 == 1){echo "pull-left";} else {echo "pull-right"; } $tag_num++; ?>" href="<?= get_tag_link($tag->term_id); ?>"><?= $tag->name; ?></a></li>
+                            <?php $tag_num = 1; foreach( $tags as $tag) : 
+                                if ($tag_num == 1) {
+                                    
+                                } else { ?>
+                                    <li><a class="btn btn-default BlogListingImgTags tags-open <?php if($tag_num % 2 == 1){echo "pull-right";} else {echo "pull-left"; } ?>" href="<?= get_tag_link($tag->term_id); ?>"><?= $tag->name; ?></a></li>
+                                <?php }
+                                $tag_num++;
+                            ?>
                             <?php endforeach; ?>
                         </ul>
                         </div>
                     <?php endif;?>
                 </div>
-                <?php write_log($post_num); ?>
                 <?php if ($post_num % 3 == 0) {
                     echo '</div>';
                     echo '<div class="clearfix">';

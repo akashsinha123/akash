@@ -242,7 +242,6 @@ p.BlogsPara_2 {
 	float: left;
 	height: auto;
 	overflow: hidden;
-	margin-right: 10px;
 }
 
 #BlogFooter ul.BlogFooterRelated li:last-child {
@@ -454,9 +453,6 @@ p.BlogsPara_2 {
 
 .Activityfooter ul li {
 	float: left;
-	width: 320px;
-	height: 370px;
-	margin-right: 10px;
 }
 
 .Activityfooter ul li:last-child {
