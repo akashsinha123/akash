@@ -31,7 +31,7 @@
     </div>
 </nav>
 
-<?php if(is_front_page()): ?>
+<?php if(is_front_page() || is_tag()): ?>
     <div class="jumbotron activityShell_HeaderJumbotron" id="activityShell_HeaderJumbotron">
         <div class="container BlogListingHeaderContainer">
             <h1 class="BlogHeaderHeading" id="BlogHeaderHeading_2">TOP 5 REASONS TO TRAVEL WHILE YOU'RE IN YOUR THIRTIES</h1>
